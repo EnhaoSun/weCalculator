@@ -155,6 +155,7 @@
 				handler(newRoute) {
 					if (newRoute.matched.length) {
 						let path = newRoute.path.split('/')[3]
+						console.log("new Route path: " + path)
 						for (const item of this.list) {
 							if (Array.isArray(item.pages)) {
 								for (const page of item.pages) {

@@ -83,8 +83,10 @@
 		methods: {
 			toSecondMenu(e) {
 				const activeTabBar = '/' + e.pagePath
+				console.log(activeTabBar)
 				for (const item of this.indexPage) {
 					if (activeTabBar === item.tabBar) {
+						console.log(item.index)
 						uni.redirectTo({
 							url: item.index
 						})
